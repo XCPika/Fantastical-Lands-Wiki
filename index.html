@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fantastical Lands Wiki</title>
+        <script src="./scripts/index.js"></script>
+        <link rel="stylesheet" href="./assets/stylesheet.css">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="./index.html" id="nav-href">
+                    <img src="./assets/img/icon.png" alt="Fantastical Lands Server Icon" width="70vw" height="70vw">
+                    <img 
+                        src="./assets/img/title_fantastical_lands.png" 
+                        alt="Fantastical Lands Title Logo" 
+                        id="nav-title" 
+                        width="260px" height="45px" 
+                    >
+                </a>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Github</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Welcome to Fantastical Lands Wiki</h1>
+        </main>
+        <footer>
+            <button onclick="darkModeToggle()">
+                <img 
+                id="dark-mode-toggle"
+                src="./assets/img/dark-mode.png"
+                alt="Dark Mode toggle icon" 
+                width="70vw" height="70vw">
+            </button>
+        </footer>
+    </body>
+    <script>initializeStorage()</script>
+</html>

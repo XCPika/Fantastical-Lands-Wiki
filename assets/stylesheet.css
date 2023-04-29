@@ -1,0 +1,50 @@
+body.dark-mode {
+    background-image: url("./img/background-dark.png");
+    color:rgb(213, 213, 213);
+}
+
+body { 
+    background-image: url("./img/background.png") ;
+    font-family: Tahoma;
+    margin: 0;
+}
+footer{
+    background-image: url('./img/nav-bar.png');
+}
+
+nav {
+    position:sticky;
+    background-image: url('./img/nav-bar.png');
+    background-size: cover;
+    display:flex;
+    flex-flow: row;
+    padding: 0.5%;
+    border-bottom:solid 1px rgb(78, 37, 128);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1), 0 0 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nav-href {
+    display:flex;
+    flex-flow:row;
+}
+
+#nav-title {
+    
+    margin: auto 0 auto 0;
+    padding-left: 5%;
+}
+
+nav h1 {
+    justify-self: left;
+    padding-left:1%;
+}
+
+nav ul {
+    margin-left:auto;
+    padding-right:1%;
+}
+
+nav li {
+    display: inline-block;
+    margin: auto 0 auto 0;
+}
