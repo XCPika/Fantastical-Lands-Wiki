@@ -22,36 +22,16 @@ header { position: sticky }
 nav {
     background-image: url('./img/page/navigation/nav-bar.png');
     background-size: cover;
-    padding: 0.5%;
+    padding: 0.3% 0 0 0;
     display:flex;
-    flex-flow:row;
-    border-bottom:solid 1px rgb(78, 37, 128);
-    
-}
-
-#nav-href {
-    display:flex;
-    flex-flow:row;
+    position:realtive;
+    flex-direction: column;
+    align-items: center;
 }
 
 #nav-title {
-    margin: auto 0 auto 0;
-    padding-left: 5%;
-}
-
-nav h1 {
-    justify-self: left;
-    padding-left:1%;
-}
-
-nav ul {
-    margin-left:auto;
-    padding-right:1%;
-}
-
-nav li {
-    display: inline-block;
-    margin: auto 0 auto 0;
+    position: absolute;
+    transform: translateY(70%);
 }
 
 footer{
@@ -69,4 +49,10 @@ footer{
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1), 0 0 5px 0 rgba(0, 0, 0, 0.19);
     border-bottom:solid 1px rgb(0, 0, 0);
     border-top:solid 1px rgb(0, 0, 0);
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    right: 1vw; 
+    top:1vw;
 }

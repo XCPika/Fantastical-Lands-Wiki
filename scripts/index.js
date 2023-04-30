@@ -4,7 +4,6 @@ function initializeStorage() {
         if (storage.getItem("dark") == null) {
             storage.setItem("dark", "true");
         }
-        console.log("running")
         setDarkMode(storage.getItem("dark") == "true" ? true : false);
     } else {
         setDarkMode(true);
@@ -25,9 +24,6 @@ function darkModeToggle() {
 }
 
 function setDarkMode(mode) {
-    console.log(mode ? "": "dark-mode")
-    var element = document.body;
-    var dark_mode_button = document.getElementById("dark-mode-toggle");
-    element.className = mode ? "dark-mode": "";
-    dark_mode_button.src = mode ? "./assets/img/page/dark_mode/dark-mode.png" : "./assets/img/page/dark_mode/light-mode.png";
+    document.body.className = mode ? "dark-mode": "";
+    document.getElementById("dark-mode-toggle").src = mode ? "./assets/img/page/dark_mode/light-mode.png" : "./assets/img/page/dark_mode/dark-mode.png";
 }

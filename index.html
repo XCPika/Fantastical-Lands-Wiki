@@ -12,34 +12,24 @@
     <body>
         <header>
             <nav>
-                <a href="./index.html" id="nav-href">
-                    <img src="./assets/img/page/navigation/nav-bar-icon.png" alt="Fantastical Lands Server Icon" height="70vw">
-                    <img 
-                        src="./assets/img/page/navigation/title_fantastical_lands.png" 
-                        alt="Fantastical Lands Title Logo" 
-                        id="nav-title" 
-                        height="45px" 
-                    >
-                </a>
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Github</a></li>
-                </ul>
+                <img src="./assets/img/page/navigation/nav-bar-icon.png" alt="Fantastical Lands Server Icon" width="65vw">
+                <img 
+                    src="./assets/img/page/navigation/title_fantastical_lands.png" alt="Fantastical Lands Title Logo" 
+                    id="nav-title" height="60px" 
+                >
+                <img 
+                    src="./assets/img/page/dark_mode/dark-mode.png" alt="Dark Mode toggle icon" 
+                    id="dark-mode-toggle" width="25px" height="25px"
+                    role="button" onClick="darkModeToggle()"
+                >
             </nav>
             <div id="stone_brick_border_nav"></div>
         </header>
         <main>
-            <h1>Welcome to Fantastical Lands Wiki</h1>
+            
         </main>
         <footer>
             <div id="stone_brick_border_nav"></div>
-            <button onclick="darkModeToggle()">
-                <img 
-                id="dark-mode-toggle"
-                src="./assets/img/page/dark_mode/dark-mode.png"
-                alt="Dark Mode toggle icon" 
-                width="25vw" height="25vw">
-            </button>
         </footer>
     </body>
     <script>initializeStorage()</script>
