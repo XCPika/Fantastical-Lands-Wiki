@@ -1,26 +1,32 @@
+html {
+    width:100vw;
+    height:100%;
+    font-family: Tahoma;
+}
+
 body.dark-mode {
-    background-image: url("./img/background-dark.png");
+    background-image: url("./img/page/background-dark.png");
     color:rgb(213, 213, 213);
 }
 
 body { 
-    background-image: url("./img/background.png") ;
-    font-family: Tahoma;
+    display : table;
+    width:100%;
+    height:100%;
+    background-image: url("./img/page/background.png") ;
     margin: 0;
 }
-footer{
-    background-image: url('./img/nav-bar.png');
-}
+
+header { position: sticky }
 
 nav {
-    position:sticky;
-    background-image: url('./img/nav-bar.png');
+    background-image: url('./img/page/navigation/nav-bar.png');
     background-size: cover;
-    display:flex;
-    flex-flow: row;
     padding: 0.5%;
+    display:flex;
+    flex-flow:row;
     border-bottom:solid 1px rgb(78, 37, 128);
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1), 0 0 10px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 #nav-href {
@@ -29,7 +35,6 @@ nav {
 }
 
 #nav-title {
-    
     margin: auto 0 auto 0;
     padding-left: 5%;
 }
@@ -47,4 +52,21 @@ nav ul {
 nav li {
     display: inline-block;
     margin: auto 0 auto 0;
+}
+
+footer{
+    display : table-footer-group;
+    background-image: url('./img/page/navigation/nav-bar.png');
+    max-height: min-content;
+}
+
+#stone_brick_border_nav{
+    background-image: url("./img/page/navigation/stone_brick_border.png");
+    background-repeat: repeat-x;
+    height:0.6vw;
+    min-height:6px;
+    max-height:12px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1), 0 0 5px 0 rgba(0, 0, 0, 0.19);
+    border-bottom:solid 1px rgb(0, 0, 0);
+    border-top:solid 1px rgb(0, 0, 0);
 }
