@@ -1,5 +1,7 @@
 # Fantastical-Lands-Wiki ![Fantastical Lands Logo](https://github.com/XCPika/Fantastical-Lands/blob/main/icon_wo_bg.png?raw=true)
- The wiki page for the Fantastical Lands Minecraft Servers custom content
+ The wiki page for the Fantastical Lands 1.19.2 Fabric Minecraft Server. This is a private server but the custom content for it is hosted on GitHub meaning anyone can use it. This wiki will be kept up to date with the most recent release information moving forward so some things may not be correct in your version if it is outdated.
+ 
+ Our other custom content will also be hosted GitHub under the same licences.
 
 ## License
 
