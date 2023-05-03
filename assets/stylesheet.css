@@ -1,6 +1,5 @@
 html {
-    height:100%;
-    width:100vw;
+    height:100%; width:100vw;
     font-family: Tahoma;
 }
 
@@ -12,11 +11,7 @@ body {
     margin: 0;
 }
 
-body.dark-mode {
-    background-image: url("img/page/background-dark.png");
-    color:rgb(213, 213, 213);
-}
-
+body.dark-mode { background-image: url("img/page/background-dark.png"); color:rgb(213, 213, 213); }
 header { position: sticky ; }
 
 nav {
@@ -27,14 +22,8 @@ nav {
     padding: 0.3% 0.3% 0 0.3%;
 }
 
-.nav-left, .nav-right , .nav-center {
-    float:left;
-    width:40%;
-}
-
-.nav-right > *{
-    float:right;
-}
+.nav-left, .nav-right , .nav-center { float:left; width:40%; }
+.nav-right > *{ float:right; }
 
 .nav-center {
     width:20%;
@@ -63,4 +52,34 @@ footer{
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1), 0 0 5px 0 rgba(0, 0, 0, 0.19);
     border-bottom:solid 1px rgb(0, 0, 0);
     border-top:solid 1px rgb(0, 0, 0);
+}
+
+.stone-border {
+    border: 10px solid transparent;
+    border-image: url("./img/page/stone_border.png") 10 round;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1), 0 0 5px 0 rgba(0, 0, 0, 0.5), 0px 0px 5px 1px rgba(0, 0, 0, 1) inset, 0 0 5px 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+.parchment { background-image: url("./img/page/parchment.png"); background-repeat: repeat; }
+.planks { background-image: url("./img/page/planks.png"); background-repeat: repeat; }
+
+main > section {
+    margin: 3%;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+    height:40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > section > img { transform: translateY(-60%); }
+
+@media screen and (max-width: 1000px) {
+    main > section {
+        margin: 5%;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }
