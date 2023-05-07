@@ -6,7 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Fantastical Lands Wiki</title>
         <script src="./scripts/index.js"></script>
-        <link rel="stylesheet" href="./assets/stylesheet.css">
+        <link rel="stylesheet" href="./assets/css/root.css">
+        <link rel="stylesheet" href="./assets/css/stylesheet.css">
+        <link rel="stylesheet" href="./assets/css/classes.css">
         <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     </head>
     <body>
@@ -52,15 +54,20 @@
             <div id="stone_brick_border_nav"></div>
         </header> 
         <main>
-            <h1>Classes</h1>
+            <section id="class-view" class="stone-border">
+                <h2>classes</h2>
+            </section>
+            <section id="class-details" class="stone-border">
+                <h2>classes</h2>
+            </section>
         </main>
         <footer>
             <div id="stone_brick_border_nav"></div>
             <img 
-                    src="./assets/img/page/dark_mode/dark-mode.png" alt="Dark Mode toggle icon" 
-                    id="dark-mode-toggle" width="25px" height="25px"
-                    role="button" onClick="darkModeToggle()"
-                >
+                src="./assets/img/page/dark_mode/dark-mode.png" alt="Dark Mode toggle icon" 
+                id="dark-mode-toggle" width="25px" height="25px"
+                role="button" onClick="darkModeToggle()"
+            >
         </footer>
     </body>
     <script>initializeStorage()</script>
