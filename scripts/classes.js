@@ -24,7 +24,7 @@ function initializeClasses() {
                 .click(searchClass)
                 .attr("id", key.toLowerCase())
                 .addClass("class-banner pixelated")             
-                .append($("<div/>").addClass("class-banner-icon pixelated").css("background-image", `url(../assets/img/icons/${key}.png)`))
+                .append($("<div/>").addClass("class-banner-icon pixelated").css("background-image", `url(./assets/img/icons/${key}.png)`))
                 .append($("<p/>").html(class_data.name).addClass("class-banner-title"))
                 .append($("<div/>").addClass("class-banner-impact-blank"))
                 .append($("<div/>").addClass("class-banner-impact-blank"))
