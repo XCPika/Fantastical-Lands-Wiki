@@ -1,6 +1,6 @@
 var data;
 $(document).ready(function(){
-    $.getJSON('../assets/data/classes/index.json', function(json) { data = json; initializeClasses();});
+    $.getJSON('./assets/data/classes/index.json', function(json) { data = json; initializeClasses();});
 });
 
 initializePage = (function(_super) {
