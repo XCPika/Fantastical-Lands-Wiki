@@ -14,7 +14,7 @@ function initializeClasses() {
     var current_class = self.location.search.substring(1);
     const current_class_element = $("#current_class")
     current_class_element.children(".class-banner-title").text(current_class.charAt(0).toUpperCase() + current_class.slice(1));
-    current_class_element.children(".class-banner-icon").css("background-image", `url(/assets/img/icons/${current_class}.png)`);
+    current_class_element.children(".class-banner-icon").css("background-image", `url(./Fantastical-Lands-Wiki/assets/img/icons/${current_class}.png)`);
     for (const key in data) {
         if (Object.hasOwnProperty.call(data, key)) {
             const class_data = data[key];
@@ -24,7 +24,7 @@ function initializeClasses() {
                 .click(searchClass)
                 .attr("id", key.toLowerCase())
                 .addClass("class-banner pixelated")             
-                .append($("<div/>").addClass("class-banner-icon pixelated").css("background-image", `url(/assets/img/icons/${key}.png)`))
+                .append($("<div/>").addClass("class-banner-icon pixelated").css("background-image", `url(./Fantastical-Lands-Wiki/assets/img/icons/${key}.png)`))
                 .append($("<p/>").html(class_data.name).addClass("class-banner-title"))
                 .append($("<div/>").addClass("class-banner-impact-blank"))
                 .append($("<div/>").addClass("class-banner-impact-blank"))
