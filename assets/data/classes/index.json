@@ -1,0 +1,32 @@
+{
+    "alchemist": {
+        "name": "Alchemist",
+        "description": "",
+        "powers": {
+            "Enraging Elixir": {
+                "description": "",
+                "active": false,
+                "cooldown": 0,
+                "key": "None"
+            },
+            "Essence Refining": {
+                "description": "",
+                "active": false,
+                "cooldown": 0,
+                "key": "None"
+            }
+        }
+    },
+    "magus": {
+        "name": "Magus",
+        "description": "",
+        "powers": {
+            "Enraging Elixir": {
+                "description": "",
+                "active": false,
+                "cooldown": 0,
+                "key": "None"
+            }
+        }
+    }
+}

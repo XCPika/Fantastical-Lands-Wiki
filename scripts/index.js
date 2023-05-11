@@ -1,3 +1,7 @@
+function initializePage() {
+    initializeStorage();
+}
+
 function initializeStorage() {
     if (typeof(Storage) !== "undefined") {
         var storage = window.localStorage;

@@ -1,0 +1,12 @@
+{
+    "name": "Fighter",
+    "description": "",
+    "powers": {
+        "Enraging Elixir": {
+            "description": "",
+            "active": false,
+            "cooldown": 0,
+            "key": "None"
+        }
+    }
+}

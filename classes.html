@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Fantastical Lands Wiki</title>
         <script src="./scripts/index.js"></script>
+        <script src="./scripts/jquery-3.6.4.min.js"></script>
+        <script src="./scripts/classes.js"></script>
         <link rel="stylesheet" href="./assets/css/root.css">
         <link rel="stylesheet" href="./assets/css/stylesheet.css">
         <link rel="stylesheet" href="./assets/css/classes.css">
@@ -34,7 +36,7 @@
                     >
                     <img 
                         src="./assets/img/page/navigation/title_fantastical_lands.png" alt="Fantastical Lands Title Logo" 
-                        id="nav-title" height="60px" 
+                        id="nav-title" height="75%" 
                         role="button" onClick="window.location='./index.html'"
                     >
                 </div>
@@ -54,11 +56,12 @@
             <div id="stone_brick_border_nav"></div>
         </header> 
         <main>
-            <section id="class-view" class="stone-border">
-                <h2>classes</h2>
-            </section>
+            <section id="class-view" class="stone-border"></section>
             <section id="class-details" class="stone-border">
-                <h2>classes</h2>
+                <div class="class-banner pixelated" id="current_class">
+                    <div class="class-banner-icon pixelated"></div>
+                    <p class="class-banner-title" id="current_class_title">Hello</p>
+                </div>
             </section>
         </main>
         <footer>
@@ -70,5 +73,5 @@
             >
         </footer>
     </body>
-    <script>initializeStorage()</script>
+    <script>initializePage()</script>
 </html>

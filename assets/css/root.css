@@ -1,4 +1,26 @@
+/* ROOT CSS: used for variable storage */
 :root {
     --bg: url("../img/page/background.png");
     --bg-dark: url("../img/page/background-dark.png");
+    --nav-bg: url('../img/page/navigation/nav-bar.png');
+
+    --stone-border: url("../img/page/stone_border.png");
+    --planks: url("../img/page/planks.png");
+    --parchment: url("../img/page/parchment.png");
 }
+
+@font-face { font-family: 'ChillPixelsMaximal'; src: url('../font/ChillPixels-Maximal.woff2') format('woff2'); }
+
+.stone-border {
+    border: 0.6vw solid transparent;
+    border-image: var(--stone-border) 10 round;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1), 0 0 5px 0 rgba(0, 0, 0, 0.5), 0px 0px 5px 1px rgba(0, 0, 0, 1) inset, 0 0 5px 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+.pixelated {
+    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+}
+.parchment { background-image: var(--parchment); background-repeat: repeat; }
+.planks { background-image: var(--planks); background-repeat: repeat; }
