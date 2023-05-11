@@ -14,7 +14,7 @@ function initializeClasses() {
     var current_class = self.location.search.substring(1);
     const current_class_element = $("#current_class")
     current_class_element.children(".class-banner-title").text(current_class.charAt(0).toUpperCase() + current_class.slice(1));
-    current_class_element.children(".class-banner-icon").css("background-image", `url(../assets/img/icons/${current_class}.png)`);
+    current_class_element.children(".class-banner-icon").css("background-image", `url(./assets/img/icons/${current_class}.png)`);
     for (const key in data) {
         if (Object.hasOwnProperty.call(data, key)) {
             const class_data = data[key];
