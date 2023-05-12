@@ -9,19 +9,20 @@
     max-height: 600px;
 }   
 
-.class-banner:last-child {
-    margin-bottom:0;
-}
 
 .class-banner {
     cursor: pointer;
     display:flex;
-    margin-bottom: 1%;
-    width:99%;
+    margin-bottom: 5%;
+    width: 100%;
     height:3.45vw;
     background-image: url('../img/class-banner.png');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.class-banner:last-child {
+    margin-bottom:0;
 }
 
 .class-banner-icon {
@@ -30,33 +31,54 @@
     margin: auto 0;
     margin-left: 0.7vw;
     height: 2.2vw;
-    width:2.5vw;
+    width:2.2vw;
+}
+.class-banner-impact {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto 2% auto auto;
+    height: 1.5vw;
+    width:5.5vw;
+    margin-left:auto;
 }
 
-.class-banner-impact-blank {
-    background-image: url('../img/icons/impact_blank.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: auto 0;
-    height: 1.5vw;
-    width:1.5vw;
-}
+.class-banner-impact.impact-0 { background-image: url('../img/icons/impact_0.png'); }
+.class-banner-impact.impact-1 { background-image: url('../img/icons/impact_1.png'); }
+.class-banner-impact.impact-2 { background-image: url('../img/icons/impact_2.png'); }
+.class-banner-impact.impact-3 { background-image: url('../img/icons/impact_3.png'); }
 
 .class-banner-title {
     font-size: 1.2vw;
+    letter-spacing: 0.5px;
     margin: auto 0;
-    margin-left:1.5%;
+    margin-left:4%;
 }
 
 #class-details {
     flex: 0.72;
     background-color: rgb(209, 209, 209);
+    min-height: 80%;
+    max-height: 600px;
+}
+
+.main-class-details {
+    overflow-y: scroll;
+    margin-top:1%;
+    padding:0% 3%;
+    max-height:97%;
 }
 
 body.dark-mode #class-details {background-color: rgb(52, 52, 52); }
 
-#class-details > .class-banner { 
+#class-details > .class-banner {
+    width:max(200px,25vw); 
+    height:max(35px, 4.4vw);
     background-size: contain;
-    transform: translate(-3.4%, -58%);
+    transform: translate(-16%, -58%);
+    margin-bottom: -9%;
     cursor: default;}
-#class-details .class-banner-title { margin-left:0.8%; }
+
+#class-details .class-banner-icon {
+    margin-left: 4%;
+}
+#class-details .class-banner-title { margin-left:6%; font-size: 1.5vw; }

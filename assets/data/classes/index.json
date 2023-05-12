@@ -1,31 +1,108 @@
 {
-    "alchemist": {
-        "name": "Alchemist",
+    "commoner": {
+        "name": "Commoner",
         "description": "",
+        "impact": 0,
+        "key": "None",
         "powers": {
             "Enraging Elixir": {
                 "description": "",
                 "active": false,
-                "cooldown": 0,
-                "key": "None"
+                "cooldown": 0
+            }
+        }
+    },
+    "alchemist": {
+        "name": "Alchemist",
+        "description": "A master of potion making, Alchemists excel in the art of the brew.",
+        "impact": 1,
+        "key": "None",
+        "powers": {
+            "Enraging Elixir": {
+                "description": "Create a potion cloud that grants strength to those in the area. Must be sneaking to activate.",
+                "active": true,
+                "cooldown": 15
             },
             "Essence Refining": {
+                "description": "Low chance to gain random potions as drops when killing mobs.",
+                "active": false,
+                "cooldown": 0
+            },
+            "Healing Tincture": {
+                "description": "Small heal buff from potions.",
+                "active": false,
+                "cooldown": 0
+            },
+            "Healing Spring": {
+                "description": "Create a potion cloud that grants regeneration to those in the area.",
+                "active": true,
+                "cooldown": 15
+            }
+        },
+        "kit": []
+    },
+    "fighter": {
+        "name": "Fighter",
+        "description": "",
+        "impact": 1,
+        "key": "None",
+        "powers": {
+            "Enraging Elixir": {
                 "description": "",
                 "active": false,
-                "cooldown": 0,
-                "key": "None"
+                "cooldown": 0
             }
         }
     },
     "magus": {
         "name": "Magus",
         "description": "",
+        "impact": 2,
+        "key": "None",
         "powers": {
             "Enraging Elixir": {
                 "description": "",
                 "active": false,
-                "cooldown": 0,
-                "key": "None"
+                "cooldown": 0
+            }
+        }
+    },
+    "explorer": {
+        "name": "Explorer",
+        "description": "",
+        "impact": 2,
+        "key": "None",
+        "powers": {
+            "Enraging Elixir": {
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        }
+    },
+    "rogue": {
+        "name": "Rogue",
+        "description": "",
+        "impact": 2,
+        "key": "None",
+        "powers": {
+            "Enraging Elixir": {
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        }
+    },
+    "builder": {
+        "name": "Builder",
+        "description": "",
+        "impact": 2,
+        "key": "None",
+        "powers": {
+            "Enraging Elixir": {
+                "description": "",
+                "active": false,
+                "cooldown": 0
             }
         }
     }
