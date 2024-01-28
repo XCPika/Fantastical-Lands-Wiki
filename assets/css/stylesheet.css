@@ -2,13 +2,12 @@
 html { font-family: ChillPixelsMaximal;}
 
 body { 
-    min-height:100svh;
+    min-height: 100svh;
+    max-height: 100svh;
     color: #1c1c1c;
-    margin: 0;
-    display : flex;
-    align-items: stretch;
-    flex-direction: column;
     background-image: var(--bg);
+    display:flex;
+    flex-direction: column;
 }
 
 body.dark-mode { background-image: var(--bg-dark); color:rgb(225, 225, 225); }
@@ -43,14 +42,14 @@ nav img { cursor: pointer; }
 
 /* MAIN */
 main {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    margin: 5% 10%;
+    display: grid;
 }
 
 /* FOOTER */
 footer{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
     justify-content: flex-end;
     background-image: var(--nav-bg);
     max-height: min-content;
@@ -72,5 +71,5 @@ footer{
 /* SCROLL BAR */
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #343434; border-radius: 15px; }
-::-webkit-scrollbar-thumb:hover { background: #545454; }
+::-webkit-scrollbar-thumb { background: transparent; border-radius: 15px; }
+::-webkit-scrollbar-thumb:hover { background: transparent; }

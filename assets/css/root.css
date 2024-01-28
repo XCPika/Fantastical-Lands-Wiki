@@ -11,10 +11,17 @@
 
 @font-face { font-family: 'ChillPixelsMaximal'; src: url('../font/ChillPixels-Maximal.woff2') format('woff2'); }
 
-.stone-border {
+/* .stone-border {
     border: 0.6vw solid transparent;
     border-image: var(--stone-border) 10 round;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1), 0 0 5px 0 rgba(0, 0, 0, 0.5), 0px 0px 5px 1px rgba(0, 0, 0, 1) inset, 0 0 5px 1px rgba(0, 0, 0, 0.5) inset;
+} */
+
+
+.stone-border {
+    border: 0.6vw solid  rgb(0, 0, 0);
+    border-image: var(--stone-border) 10 round;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1), 0 0 5px 0 rgba(0, 0, 0, 0.19), 0px 0px 5px 1px rgba(0, 0, 0, 1) inset;
 }
 
 .pixelated {
