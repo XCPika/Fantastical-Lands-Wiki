@@ -4,66 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Details about items in Fantastical Lands and how to craft them.">
         <title>Fantastical Lands Wiki</title>
         <script src="./scripts/index.js"></script>
-        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link defer rel="stylesheet" href="./assets/css/reset.min.css">
         <link rel="stylesheet" href="./assets/css/root.css">
         <link rel="stylesheet" href="./assets/css/stylesheet.css">
+        <link rel="stylesheet" href="./assets/css/items.css">
         <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="nav-left">
-                    <img 
-                        src="./assets/img/page/navigation/title_classes.png" alt="Classes" 
-                        height="30px"
-                        role="button" onClick="window.location='./classes.html'" tabindex="0"
-                    >
-                    <img 
-                        src="./assets/img/page/navigation/title_races.png" alt="Races" 
-                        height="30px"
-                        role="button" onClick="window.location='./races.html'" tabindex="1"
-                    >
-                </div>
-                <div class="nav-center">
-                    <img 
-                        src="./assets/img/page/navigation/nav-bar-icon.png" alt="Fantastical Lands Server Icon"
-                        width="65vw"
-                        role="button" onClick="window.location='./index.html'" tabindex="2"
-                    >
-                    <img 
-                        src="./assets/img/page/navigation/title_fantastical_lands.png" alt="Fantastical Lands Title Logo" 
-                        id="nav-title" height="60px" 
-                        role="button" onClick="window.location='./index.html'"
-                    >
-                </div>
-                <div class="nav-right">
-                    <img 
-                        src="./assets/img/page/navigation/title_items.png" alt="Items" 
-                        height="30px"
-                        role="button" onClick="window.location='./items.html'" tabindex="5"
-                    >
-                    <img 
-                        src="./assets/img/page/navigation/title_structures.png" alt="Structures" 
-                        height="30px"
-                        role="button" onClick="window.location='./structures.html'" tabindex="4"
-                    >
-                </div>
-            </nav>
-            <div id="stone_brick_border_nav"></div>
-        </header>
+        <div id="header"></div> 
         <main>
-            <h1>Items</h1>
+            <section id="item-crafting-view" class="stone-border">
+                <img class="item pixelated" id="0" src="./assets/img/icons/alchemist.png">
+                <img class="item pixelated" id="1" src="./assets/img/icons/alchemist.png">
+                <img class="item pixelated" id="2" src="./assets/img/icons/alchemist.png">
+                <img class="item pixelated" id="3" src="./assets/img/icons/alchemist.png">
+                <img class="item pixelated" id="4" src="./assets/img/icons/alchemist.png">
+                <img class="item pixelated" id="5" src="./assets/img/icons/alchemist.png">
+                <img class="item pixelated" id="6" src="./assets/img/icons/alchemist.png">
+                <img class="item pixelated" id="7" src="./assets/img/icons/alchemist.png">
+                <img class="item pixelated" id="8" src="./assets/img/icons/alchemist.png">
+            </section>
+            <section id="item-details" class="stone-border"></section>
         </main>
-        <footer>
-            <div id="stone_brick_border_nav"></div>
-            <img 
-                    src="./assets/img/page/dark_mode/dark-mode.png" alt="Dark Mode toggle icon" 
-                    id="dark-mode-toggle" width="25px" height="25px"
-                    role="button" onClick="darkModeToggle()"
-                >
-        </footer>
+        <div id="footer"></div> 
     </body>
-    <script>initializePage()</script>
+    <script>
+        getURL('/template/header.html', '#header');
+        getURL('/template/footer.html', '#footer').then(
+            function(value) { initializePage() }
+        );
+    </script>
 </html>

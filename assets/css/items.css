@@ -1,0 +1,43 @@
+main {
+    grid-template-columns: 0.25fr 0.75fr;
+    grid-template-rows: auto;
+}
+
+#item-crafting-view {
+    margin: auto 5vw;
+    grid-area: 2 / 1;
+    grid-row-end: 2;
+    aspect-ratio: 1;
+    background-color: #c6c6c6;
+    display:grid;
+    aspect-ratio: 1;
+    gap: 5.6%;
+    padding: 3%;
+    grid-template-columns: repeat(3, minmax(50px, 0.312fr));
+    grid-template-rows: repeat(3, minmax(50px, 0.312fr));
+}   
+
+body.dark-mode #item-crafting-view { background-color: #343434; }
+
+.item {
+    border: min(10px, 30px) solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    border-image: var(--crafting-border) 2 round;
+    /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1), 0 0 5px 0 rgba(0, 0, 0, 0.19), 0px 0px 5px 1px rgba(0, 0, 0, 1) inset; */
+    aspect-ratio: 1;
+    object-fit: contain;
+    height: calc(100% - min(10px, 30px));
+}
+
+body.dark-mode .item {
+    border-image: var(--crafting-border-dark) 2 round;
+}
+
+#item-details {
+    position: relative;
+    grid-area: 1 / 2;
+    grid-row-end: 4;
+    background-color: rgb(209, 209, 209);
+}
+
+body.dark-mode #item-details { background-color: rgb(52, 52, 52); }
