@@ -65,7 +65,8 @@ async function getURL(url, findElem, deployDir ,error ) {
                     resolve(request.responseText)
                 }
             };
-            if (window.location.hostname != "127.0.0.1" || window.location.hostname != "localhost") {
+            if (!(window.location.hostname == "127.0.0.1" || window.location.hostname == "localhost")) {
+                console.log(deployDir)
                 if (deployDir != null) url = `${deployDir}/${url}`
             }
             
