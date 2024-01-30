@@ -42,7 +42,7 @@ function setDarkMode(mode) {
  * @param  {Function} error       Callback on failure
  */
 
-async function getURL(url, findElem, error ) {
+async function getURL(url, findElem, deployDir ,error ) {
 	// Feature detection
 	if ( !window.XMLHttpRequest ) return;
 	// Create new request
@@ -65,7 +65,10 @@ async function getURL(url, findElem, error ) {
                     resolve(request.responseText)
                 }
             };
-
+            if (window.location.hostname != "127.0.0.1" || window.location.hostname != "localhost") {
+                if (deployDir != null) url = `${deployDir}/${url}`
+            }
+            
             // Get the HTML
             request.open( 'GET', url );
             request.send();
