@@ -65,13 +65,13 @@ async function getURL(url, findElem, deployDir ,error ) {
                     resolve(request.responseText)
                 }
             };
+            var complete = url
             if (!(window.location.hostname == "127.0.0.1" || window.location.hostname == "localhost")) {
-                console.log(deployDir)
-                if (deployDir != null) url = `${deployDir}/${url}`
+                if (deployDir != undefined) complete = `${deployDir}/${url}`
             }
             
             // Get the HTML
-            request.open( 'GET', url );
+            request.open( 'GET', complete );
             request.send();
         }
     )
