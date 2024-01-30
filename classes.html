@@ -31,8 +31,10 @@
         <div id="footer"></div>
     </body>
     <script>
-        getURL('/template/header.html', '#header');
-        getURL('/template/footer.html', '#footer').then(
+        console.log(window.location.hostname)
+        let prefix = window.location.hostname == "127.0.0.1" ? "" : "/Fantastical-Lands-Wiki"
+        getURL(prefix + '/template/header.html', '#header');
+        getURL(prefix + '/template/footer.html', '#footer').then(
             function(value) { initializePage() }
         );
     </script>
