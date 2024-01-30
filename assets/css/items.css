@@ -4,7 +4,7 @@ main {
 }
 
 #item-crafting-view {
-    margin: auto 5vw;
+    margin: auto 5svw;
     grid-area: 2 / 1;
     grid-row-end: 2;
     aspect-ratio: 1;

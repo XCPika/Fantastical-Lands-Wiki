@@ -10,6 +10,7 @@ h2 {
     padding: 2%;
     padding-left:3%;
     background-color: rgb(209, 209, 209);
+    scrollbar-width: none;
 }   
 
 body.dark-mode #class-view { background-color: rgb(52, 52, 52); }
@@ -65,11 +66,10 @@ body.dark-mode #class-view { background-color: rgb(52, 52, 52); }
 .class-banner-impact.impact-3 { background-image: url('../img/icons/impact_3.png'); }
 
 .class-banner-title {
-    
     position: absolute;
     top:22%;
     left:19%;
-    font-size: 1.2vw;
+    font-size: 1.2svw;
     letter-spacing: 0.5px;
     margin: 0;
 }
@@ -83,16 +83,17 @@ body.dark-mode #class-view { background-color: rgb(52, 52, 52); }
 
 .main-class-details {
     position: absolute;
-    font-size: 1.2vw;
+    font-size: 1.2svw;
     top: 0;
     left: 0;
     margin-top: 3%;
     margin-left: 2.3%;
     overflow-y: scroll;
     height: calc(100% - 5.5vh);
+    scrollbar-width: none;
 }
 
-body.dark-mode #class-details { background-color: rgb(52, 52, 52); }
+body.dark-mode #class-details { background-color: #343434; }
 
 #class-details > .class-banner {
     position: absolute;
@@ -106,6 +107,60 @@ body.dark-mode #class-details { background-color: rgb(52, 52, 52); }
     margin-bottom: -3.5%;
 }
 
+#class-details .class-banner-title { font-size: 1.7svw; }
+
+@media screen and (max-width: 50em) {
+    main {
+        grid-template-columns: 0.15fr 0.85fr;
+    }
 
 
-#class-details .class-banner-title { font-size: 1.7vw; }
+    .class-banner:not(#class-details .class-banner) {
+        max-height: 50px;
+        min-height:30px;
+        aspect-ratio: 1;
+        margin: 5% auto;
+        background-image: url('../img/class-banner-small.png');
+    }
+
+    .class-banner-icon:not(#class-details .class-banner-icon) {
+        top:13%;
+        left:13%;
+    }
+
+    .class-banner-impact:not(#class-details .class-banner-impact) {
+        display: none;
+    }
+
+    .class-banner-title:not(#class-details .class-banner-title) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 31.25em) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.15fr 0.85fr;
+        gap: 5%;
+        margin: 0;
+        padding: 5%;
+    }
+
+    #class-view {
+        display:flex;
+        padding:1%;
+        grid-area: 1 / 1;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .class-banner:not(#class-details .class-banner) {
+        height: 100%;
+        margin: auto 1%;
+        margin-right: 0;
+    }
+
+    #class-details {
+        grid-area: 2 / 1;
+    }
+}
