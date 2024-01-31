@@ -50,7 +50,7 @@ async function getURL(url, findElem, deployDir ) {
             if (!(window.location.hostname == "127.0.0.1" || window.location.hostname == "localhost")) {
                 if (deployDir != undefined) complete = `${deployDir}/${url}`
             }
-            await fetch(url)
+            await fetch(complete)
                 .then(data => resolve(data.text()))
                 .catch(data => {
                     consle.log(data.error)
