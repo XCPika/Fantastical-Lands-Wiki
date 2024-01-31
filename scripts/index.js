@@ -1,4 +1,4 @@
-function initializePage() {
+async function initializePage() {
     initializeStorage();
 }
 
@@ -39,45 +39,27 @@ function setDarkMode(mode) {
  * Get HTML from another URL
  * @param  {String}   url         The URL
  * @param  {String}   findElem    Query selector of the element to replace
- * @param  {Function} error       Callback on failure
+ * @param  {String}   deployDir   Extra routing that may be required by deployment
  */
 
-async function getURL(url, findElem, deployDir ,error ) {
-	// Feature detection
-	if ( !window.XMLHttpRequest ) return;
-	// Create new request
-	var request = new XMLHttpRequest();
-
+async function getURL(url, findElem, deployDir ) {
     let promise = new Promise(
-        function (resolve, reject) {
+        async function (resolve, reject) {
             // Setup callbacks
-            request.onreadystatechange = function () {
-                // If the request is complete
-                if ( request.readyState === 4 ) {
-                    // If the request failed
-                    if ( request.status !== 200 ) {
-                        if ( error && typeof error === 'function' ) {
-                            error( request.responseText, request );
-                        }
-                        reject(request.responseText);
-                    }
-                    // If the request succeeded
-                    resolve(request.responseText)
-                }
-            };
             var complete = url
             if (!(window.location.hostname == "127.0.0.1" || window.location.hostname == "localhost")) {
                 if (deployDir != undefined) complete = `${deployDir}/${url}`
             }
-            
-            // Get the HTML
-            request.open( 'GET', complete );
-            request.send();
+            await fetch(url)
+                .then(data => resolve(data.text()))
+                .catch(data => {
+                    consle.log(data.error)
+                    reject(data.error)
+                });
         }
     )
     
     var embed = document.querySelector(findElem);
     if (!embed) return;
     embed.outerHTML = await promise;
-	
 };

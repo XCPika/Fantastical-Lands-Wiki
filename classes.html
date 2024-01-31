@@ -7,33 +7,37 @@
         <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
         <meta name="description" content="Details about the different classes in Fantastical Lands.">
         <title>Fantastical Lands Wiki</title>
-        <script async src="./scripts/jquery-3.6.4.min.js"></script>
         <script src="./scripts/index.js"></script>
-        <script async src="./scripts/classes.js"></script>
+        <script src="./scripts/origins.js"></script>
         <link defer rel="stylesheet" href="./assets/css/reset.min.css">
         <link rel="stylesheet" href="./assets/css/root.css">
         <link rel="stylesheet" href="./assets/css/stylesheet.css">
         <link rel="stylesheet" href="./assets/css/origins.css">
+        <link rel="preload" fetchpriority="high" as="image" href="/assets/img/page/navigation/nav-bar.webp" type="image/webp">
         <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <div id="header"></div>
         <main>
-            <section id="class-view" class="stone-border"></section>
-            <section id="class-details" class="stone-border">
-                <div class="class-banner" id="current_class">
-                    <div class="class-banner-icon"></div>
-                    <h1 class="class-banner-title" id="current_class_title">Classes</h1>
+            <section id="origin-view" class="stone-border"></section>
+            <section id="origin-details" class="stone-border">
+                <div class="origin-banner" id="current_origin">
+                    <div class="origin-banner-icon"></div>
+                    <h1 class="origin-banner-title" id="current_origin_title">Classes</h1>
                 </div>
-                <div class="main-class-details"></div>
+                <div class="main-origin-details"></div>
             </section>
         </main>
         <div id="footer"></div>
     </body>
     <script>
         getURL('/template/header.html', '#header', "/Fantastical-Lands-Wiki");
-        getURL('/template/footer.html', '#footer', "/Fantastical-Lands-Wiki").then(
-            function(value) { initializePage() }
-        );
+        getURL('/template/footer.html', '#footer', "/Fantastical-Lands-Wiki")
+            .then( 
+                async function() {
+                    await initializePage()
+                        .then(initializeOrigins('./assets/data/classes/index.json'))
+                }
+            )
     </script>
 </html>

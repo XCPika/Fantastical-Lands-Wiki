@@ -1,9 +1,9 @@
-/* CLASSES PAGE root/classes.html */
+/* ORIGIN VIEWER CSS root/classes.html root/races.html */
 h2 {
     margin: 0;
 }
 
-#class-view {
+#origin-view {
     grid-area: 2 / 1;
     grid-row-end: 2;
     overflow: auto;
@@ -13,15 +13,15 @@ h2 {
     scrollbar-width: none;
 }   
 
-body.dark-mode #class-view { background-color: rgb(52, 52, 52); }
+body.dark-mode #origin-view { background-color: rgb(52, 52, 52); }
 
-.class-banner {
+.origin-banner {
     position: relative;
     cursor: pointer;
     display:grid;
     aspect-ratio: 5.7;
     grid-template-columns: 17% 41.5% 41.5%;
-    background-image: url('../img/class-banner.png');
+    background-image: url('../img/origin-banner.png');
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 3%;
@@ -30,11 +30,11 @@ body.dark-mode #class-view { background-color: rgb(52, 52, 52); }
     image-rendering: pixelated;
 }
 
-.class-banner:last-child {
+.origin-banner:last-child {
     margin-bottom:0;
 }
 
-.class-banner-icon {
+.origin-banner-icon {
     position: absolute;
     top:13%;
     left:2.5%;
@@ -49,7 +49,7 @@ body.dark-mode #class-view { background-color: rgb(52, 52, 52); }
     image-rendering: pixelated;
 }
 
-.class-banner-impact {
+.origin-banner-impact {
     position: absolute;
     right:5%;
     bottom:38%;
@@ -60,12 +60,12 @@ body.dark-mode #class-view { background-color: rgb(52, 52, 52); }
     height: 30%;
 }
 
-.class-banner-impact.impact-0 { background-image: url('../img/icons/impact_0.png'); }
-.class-banner-impact.impact-1 { background-image: url('../img/icons/impact_1.png'); }
-.class-banner-impact.impact-2 { background-image: url('../img/icons/impact_2.png'); }
-.class-banner-impact.impact-3 { background-image: url('../img/icons/impact_3.png'); }
+.origin-banner-impact.impact-0 { background-image: url('../img/icons/impact_0.png'); }
+.origin-banner-impact.impact-1 { background-image: url('../img/icons/impact_1.png'); }
+.origin-banner-impact.impact-2 { background-image: url('../img/icons/impact_2.png'); }
+.origin-banner-impact.impact-3 { background-image: url('../img/icons/impact_3.png'); }
 
-.class-banner-title {
+.origin-banner-title {
     position: absolute;
     top:22%;
     left:19%;
@@ -74,14 +74,14 @@ body.dark-mode #class-view { background-color: rgb(52, 52, 52); }
     margin: 0;
 }
 
-#class-details {
+#origin-details {
     position: relative;
     grid-area: 1 / 2;
     grid-row-end: 4;
     background-color: rgb(209, 209, 209);
 }
 
-.main-class-details {
+.main-origin-details {
     position: absolute;
     font-size: 1.2svw;
     top: 0;
@@ -93,9 +93,9 @@ body.dark-mode #class-view { background-color: rgb(52, 52, 52); }
     scrollbar-width: none;
 }
 
-body.dark-mode #class-details { background-color: #343434; }
+body.dark-mode #origin-details { background-color: #343434; }
 
-#class-details > .class-banner {
+#origin-details > .origin-banner {
     position: absolute;
     top: 0;
     left: 0;
@@ -107,7 +107,7 @@ body.dark-mode #class-details { background-color: #343434; }
     margin-bottom: -3.5%;
 }
 
-#class-details .class-banner-title { font-size: 1.7svw; }
+#origin-details .origin-banner-title { font-size: 1.7svw; }
 
 @media screen and (max-width: 50em) {
     main {
@@ -115,24 +115,24 @@ body.dark-mode #class-details { background-color: #343434; }
     }
 
 
-    .class-banner:not(#class-details .class-banner) {
+    .origin-banner:not(#origin-details .origin-banner) {
         max-height: 50px;
         min-height:30px;
         aspect-ratio: 1;
         margin: 5% auto;
-        background-image: url('../img/class-banner-small.png');
+        background-image: url('../img/origin-banner-small.png');
     }
 
-    .class-banner-icon:not(#class-details .class-banner-icon) {
+    .origin-banner-icon:not(#origin-details .origin-banner-icon) {
         top:13%;
         left:13%;
     }
 
-    .class-banner-impact:not(#class-details .class-banner-impact) {
+    .origin-banner-impact:not(#origin-details .origin-banner-impact) {
         display: none;
     }
 
-    .class-banner-title:not(#class-details .class-banner-title) {
+    .origin-banner-title:not(#origin-details .origin-banner-title) {
         display: none;
     }
 }
@@ -146,7 +146,7 @@ body.dark-mode #class-details { background-color: #343434; }
         padding: 5%;
     }
 
-    #class-view {
+    #origin-view {
         display:flex;
         padding:1%;
         grid-area: 1 / 1;
@@ -154,13 +154,13 @@ body.dark-mode #class-details { background-color: #343434; }
         overflow-y: hidden;
     }
 
-    .class-banner:not(#class-details .class-banner) {
+    .origin-banner:not(#origin-details .origin-banner) {
         height: 100%;
         margin: auto 1%;
         margin-right: 0;
     }
 
-    #class-details {
+    #origin-details {
         grid-area: 2 / 1;
     }
 }

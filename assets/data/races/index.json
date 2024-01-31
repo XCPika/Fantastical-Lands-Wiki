@@ -1,0 +1,93 @@
+{
+    "birdfolk": {
+        "name": "Birdfolk",
+        "description": "A majestic race of flying humanoid creatures that value freedom and adventure above all else. Free spirited people they spend their days with their brothers and sisters exploring the skies while discovering new places to rest their weary wings.",
+        "impact": 2,
+        "key": "None",
+        "powers": {
+            "None": {
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        }
+    },
+    "dwarf": {
+        "name": "Dwarf",
+        "description": "Delving deep, most dwarves never see the light of the sun. Adapted perfectly for their dark and confined spaces they bring life to an otherwise desolate mountain. They are one of the hardiest and most talented of all who walk this land.",
+        "impact": 2,
+        "key": "None",
+        "powers": {
+            "None": {
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        }
+    },
+    "elf": {
+        "name": "Elf",
+        "description": "Beautiful, elegant, dangerous, and immortal. Elves tend to care greatly for nature doing everything they can to protect the forests and glades of this world. Their incredible agility and accuracy make them formidable enemies should you cross them.",
+        "impact": 1,
+        "key": "None",
+        "powers": {
+            "None": {
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        }
+    },
+    "goblin": {
+        "name": "Goblin",
+        "description": "Small, greedy, and afraid goblins tend to travel in large tribes. They use their numbers to overwhelm and collect resources from the things that they kill. Obsessed with shiny objects they prefer to use gilded tools and armor. Not many know what it means to be goblin.",
+        "impact": 2,
+        "key": "None",
+        "powers": {
+            "None": {
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        }
+    },
+    "human": {
+        "name": "Human",
+        "description": "Being the most widely spread race in the world, humans are incredibly adaptive and tend to conquer anywhere they go regardless of their lack of mastery over any one particular craft.",
+        "impact": 1,
+        "key": "None",
+        "powers": {
+            "None": {
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        }
+    },
+    "orc": {
+        "name": "Orc",
+        "description": "Fearsome and powerful, Orcs tend to field some of the strongest armies the world will ever see. They’re battle fury pushes them through combat even with the most fatal of wounds. Despite their ferocity, an Orcs honor rivals that of even a dwarf.",
+        "impact": 3,
+        "key": "None",
+        "powers": {
+            "None": {
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        }
+    },
+    "trollkin": {
+        "name": "Trollkin",
+        "description": "As ancient as the mountains themselves, Trollkin are known for their hulking frames and near-indestructible skin. They possess uncanny regenerative abilities but are vulnerable to fire due to their troll blood, which can cause them to combust. Despite these challenges, they strive to coexist peacefully with their neighbors.",
+        "impact": 3,
+        "key": "None",
+        "powers": {
+            "None": {
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        }
+    }
+}

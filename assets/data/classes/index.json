@@ -1,11 +1,11 @@
 {
     "commoner": {
         "name": "Commoner",
-        "description": "",
+        "description": "Regular old minecraft character, no abilities, no debuffs",
         "impact": 0,
         "key": "None",
         "powers": {
-            "Enraging Elixir": {
+            "None": {
                 "description": "",
                 "active": false,
                 "cooldown": 0
@@ -43,11 +43,11 @@
     },
     "fighter": {
         "name": "Fighter",
-        "description": "",
+        "description": "Unmatched warriors with the ability to conquer any foe. Their knowledge of fighting forms helps them adapt to any enemy.",
         "impact": 1,
         "key": "None",
         "powers": {
-            "Enraging Elixir": {
+            "None": {
                 "description": "",
                 "active": false,
                 "cooldown": 0
@@ -56,11 +56,11 @@
     },
     "magus": {
         "name": "Magus",
-        "description": "",
+        "description": "A maker of mystical marvels.",
         "impact": 2,
         "key": "None",
         "powers": {
-            "Enraging Elixir": {
+            "None": {
                 "description": "",
                 "active": false,
                 "cooldown": 0
@@ -69,11 +69,11 @@
     },
     "explorer": {
         "name": "Explorer",
-        "description": "",
+        "description": "Masters of terrain, Explorers widen the world with every new sight they see.",
         "impact": 2,
         "key": "None",
         "powers": {
-            "Enraging Elixir": {
+            "None": {
                 "description": "",
                 "active": false,
                 "cooldown": 0
@@ -82,11 +82,11 @@
     },
     "rogue": {
         "name": "Rogue",
-        "description": "",
+        "description": "Masters of shadow the rogue is trained in the deadly arts.",
         "impact": 2,
         "key": "None",
         "powers": {
-            "Enraging Elixir": {
+            "None": {
                 "description": "",
                 "active": false,
                 "cooldown": 0
@@ -95,11 +95,11 @@
     },
     "builder": {
         "name": "Builder",
-        "description": "",
+        "description": "Talented and efficient, Builders get the job done no matter the cost.",
         "impact": 2,
         "key": "None",
         "powers": {
-            "Enraging Elixir": {
+            "None": {
                 "description": "",
                 "active": false,
                 "cooldown": 0
