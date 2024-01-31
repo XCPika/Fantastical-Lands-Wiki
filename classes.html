@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="./assets/css/root.css">
         <link rel="stylesheet" href="./assets/css/stylesheet.css">
         <link rel="stylesheet" href="./assets/css/origins.css">
-        <link rel="preload" fetchpriority="high" as="image" href="/assets/img/page/navigation/nav-bar.webp" type="image/webp">
+        <link rel="preload" fetchpriority="high" as="image" href="./assets/img/page/navigation/nav-bar.webp" type="image/webp">
         <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     </head>
     <body>
@@ -31,8 +31,8 @@
         <div id="footer"></div>
     </body>
     <script>
-        getURL('/template/header.html', '#header', "/Fantastical-Lands-Wiki");
-        getURL('/template/footer.html', '#footer', "/Fantastical-Lands-Wiki")
+        getHTMLfromURL('/template/header.html', '#header', "/Fantastical-Lands-Wiki");
+        getHTMLfromURL('/template/footer.html', '#footer', "/Fantastical-Lands-Wiki")
             .then( 
                 async function() {
                     await initializePage()
