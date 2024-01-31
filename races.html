@@ -29,8 +29,8 @@
         <div id="footer"></div> 
     </body>
     <script>
-        getURL('/template/header.html', '#header', "/Fantastical-Lands-Wiki");
-        getURL('/template/footer.html', '#footer', "/Fantastical-Lands-Wiki")
+        getHTMLfromURL('/template/header.html', '#header', "/Fantastical-Lands-Wiki");
+        getHTMLfromURL('/template/footer.html', '#footer', "/Fantastical-Lands-Wiki")
             .then( 
                 async function() {
                     await initializePage()
