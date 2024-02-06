@@ -1,0 +1,20 @@
+main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#main-content {
+    padding: 2%;
+    text-align: center;
+}
+
+main section p {
+    margin: auto 0;
+}
+
+#main-title-content {
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

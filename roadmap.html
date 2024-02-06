@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fantastical Lands Wiki</title>
+        <script src="./scripts/index.js"></script>
+        <link rel="stylesheet" href="./assets/css/reset.min.css">
+        <link rel="stylesheet" href="./assets/css/root.css">
+        <link rel="stylesheet" href="./assets/css/stylesheet.css">
+        <link rel="stylesheet" href="./assets/css/roadmap.css">
+        <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="header"></div> 
+        <main>
+            <section class="stone-border" id="roadmap-section">
+                <img src="./assets/img/page/roadmap/roadmap.webp" class="roadmap-header pixelated">
+                <section class="roadmap-grid">
+                    <div>
+                        <img src="./assets/img/page/roadmap/release.webp" class="roadmap-title pixelated">
+                        <p>- Custom Currency</p>
+                        <p>- Coins to XP</p>
+                        <p>- 9 Classes</p>
+                        <p>- 9 Races</p>
+                    </div>
+                    <div>
+                        <img src="./assets/img/page/roadmap/2.0.webp" class="roadmap-title pixelated">
+                        <p>- In-depth abilities</p>
+                        <p>- More classes</p>
+                        <p>- More races</p>
+                    </div>
+                    <div>
+                        <img src="./assets/img/page/roadmap/future.webp" class="roadmap-title pixelated">
+                        <p>- Lootable Structures</p>
+                        <p>- Villages of Races</p>
+                        <p>- Custom Biomes</p>
+
+                    </div>
+                </section>
+            </section>
+        </main>
+        <div id="footer"></div> 
+    </body>
+    <script>
+        getHTMLfromURL('/template/header.html', '#header', "/Fantastical-Lands-Wiki");
+        getHTMLfromURL('/template/footer.html', '#footer', "/Fantastical-Lands-Wiki").then(
+            function(value) { initializePage() }
+        );
+    </script>
+</html>

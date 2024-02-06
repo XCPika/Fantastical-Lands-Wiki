@@ -102,4 +102,6 @@ async function initializeOrigins(url) {
     
 };
 
-function searchOrigin(event) { self.location = `${self.location.protocol}//${self.location.host}${self.location.pathname}?${event.currentTarget.id}` };
+function searchOrigin(event) { 
+    self.location = `${self.location.protocol}//${self.location.host}${self.location.pathname}?${event.currentTarget.id}` 
+};

@@ -1,0 +1,39 @@
+main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#roadmap-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.roadmap-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    justify-content: space-evenly;
+    font-size: 1svw;
+    text-align:center;
+}
+
+.roadmap-header { 
+    width: 25%;
+    max-width: 15svw;
+    margin-bottom: 2%;
+}
+
+
+.roadmap-title {
+    height:20%;
+}
+
+@media screen and (max-width: 800px) {
+    .roadmap-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}

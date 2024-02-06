@@ -71,14 +71,49 @@ main {
     min-height: 65svh;
 }
 
+section.stone-border {
+    background-color: rgb(209, 209, 209);
+}
+
+body.dark-mode section.stone-border { 
+    background-color: #343434;
+}
+
 /* FOOTER */
 footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    justify-content: flex-end;
     background-image: var(--nav-bg);
-    max-height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main-footer {
+    width: calc(100% - 1%);
+    margin: 0.5%;
+    min-height:28px;
+}
+
+#dark-mode-toggle {
+    float: right;
+}
+
+.social {
+    grid-row: 2;
+    height: 25px;
+    aspect-ratio: 1;
+    background-size: cover;
+}
+
+#github {
+    float: left;
+    background-image: url('../img/github-mark.png');
+}
+
+body.dark-mode #github {
+    background-image: url('../img/github-mark-white.png');
 }
 
 #stone_brick_border_nav{
@@ -99,3 +134,17 @@ footer{
 ::-webkit-scrollbar-track { background: #505050; }
 ::-webkit-scrollbar-thumb { background: #343434; }
 ::-webkit-scrollbar-thumb:hover { background: #404040; }
+
+
+
+@media screen and (max-width: 586px) {
+    #nav-title {
+        top: 80%;
+    }
+}
+
+@media screen and (max-width: 497px) {
+    #nav-title {
+        top: 90%;
+    }
+}

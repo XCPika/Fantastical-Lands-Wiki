@@ -11,7 +11,10 @@
     --parchment: url("../img/page/parchment.png");
 }
 
-@font-face { font-family: 'ChillPixelsMaximal'; src: url('../font/ChillPixels-Maximal.woff2') format('woff2'); }
+@font-face { 
+    font-family: 'ChillPixelsMaximal'; 
+    src: url('../font/ChillPixels-Maximal.woff2') format('woff2'); 
+}
 
 .stone-border {
     border: 0.6svw solid  rgb(0, 0, 0);
@@ -21,6 +24,10 @@
     image-rendering: -webkit-optimize-contrast;
     image-rendering: pixelated;
 }
-
+.pixelated {
+    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+}
 .parchment { background-image: var(--parchment); background-repeat: repeat; }
 .planks { background-image: var(--planks); background-repeat: repeat; }

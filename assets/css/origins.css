@@ -9,11 +9,8 @@ h2 {
     overflow: auto;
     padding: 2%;
     padding-left:3%;
-    background-color: rgb(209, 209, 209);
     scrollbar-width: none;
 }   
-
-body.dark-mode #origin-view { background-color: rgb(52, 52, 52); }
 
 .origin-banner {
     position: relative;
@@ -78,12 +75,11 @@ body.dark-mode #origin-view { background-color: rgb(52, 52, 52); }
     position: relative;
     grid-area: 1 / 2;
     grid-row-end: 4;
-    background-color: rgb(209, 209, 209);
 }
 
 .main-origin-details {
     position: absolute;
-    font-size: 1.2svw;
+    font-size: 1svw;
     top: 0;
     left: 0;
     margin-top: 3%;
@@ -93,7 +89,6 @@ body.dark-mode #origin-view { background-color: rgb(52, 52, 52); }
     scrollbar-width: none;
 }
 
-body.dark-mode #origin-details { background-color: #343434; }
 
 #origin-details > .origin-banner {
     position: absolute;
@@ -122,7 +117,6 @@ body.dark-mode #origin-details { background-color: #343434; }
         margin: 5% auto;
         background-image: url('../img/origin-banner-small.png');
     }
-
     .origin-banner-icon:not(#origin-details .origin-banner-icon) {
         top:13%;
         left:13%;

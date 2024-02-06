@@ -42,7 +42,7 @@ function setDarkMode(mode) {
  * @param  {String}   deployDir   Extra routing that may be required by deployment
  */
 
-async function getHTMLfromURL(url, findElem, deployDir ) {
+async function getHTMLfromURL(url, findElem, deployDir) {
     let promise = new Promise(
         async function (resolve, reject) {
             // Setup callbacks
