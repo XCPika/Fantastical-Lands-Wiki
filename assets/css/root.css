@@ -14,6 +14,7 @@
 @font-face { 
     font-family: 'ChillPixelsMaximal'; 
     src: url('../font/ChillPixels-Maximal.woff2') format('woff2'); 
+    font-display: swap;
 }
 
 .stone-border {

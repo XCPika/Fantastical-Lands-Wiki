@@ -1,7 +1,7 @@
 {
     "origin_orb": {
         "name": "Orb of Origin",
-        "description": "Can be used to allow a player to change their race and class. Will be consumed on use.",
+        "description": "Can be used to allow a player to change their race and class. <br></br>Will be consumed on use.",
         "recipe": [
             "x", "X", "x",
             "X", "O", "X",
@@ -9,24 +9,63 @@
         ],
         "items": ["diamond", "netherite", "end_crystal"]
     },
-    "XP Forge": {
+    "xp_forge": {
         "name": "XP Forge",
-        "description": "Similar to a furnace but it instead burns coins into XP! \nThe amount of coins can be changed in config but generally lower tiers might require more than one coin per orb whereas higher tiers may make multiple orbs per coin",
-        "recipe": [
+        "description": "Similar to a furnace but it instead burns coins into XP! <br></br>Coins will be turned into Skill Orbs. <br></br>The amount of coins can be changed in config but generally lower tiers might require more than one coin per orb whereas higher tiers may make multiple orbs per coin",        "recipe": [
             "x", "X", "x",
-            "x", "O", "x",
+            "i", "O", "i",
             "x", "x", "x"
         ],
-        "items": ["smooth_stone", "xp_bottle", "furnace"]
+        "items": ["chisel_stone", "xp_bottle", "coin_iron", "furnace"]
     },
-    "oak_stair": {
-        "name": "oak_stair",
-        "description": "Similar to a furnace but it instead burns coins into XP! \nThe amount of coins can be changed in config but generally lower tiers might require more than one coin per orb whereas higher tiers may make multiple orbs per coin",
+    "skill_orb": {
+        "name": "Skill Orb",
+        "description": "Created in the XP Forge by smelting down coins.<br></br>Each one gives exactly the required amount of xp to level up.<br></br>Consumed on use.",
         "recipe": [
-            "x", "", "",
-            "x", "x", "",
+            "", "", "",
+            "", "", "",
+            "", "", ""
+        ],
+        "items": [""]
+    },
+    "coin_iron": {
+        "name": "Iron Coin",
+        "description": "A simple coin (Tier 1 Coin).<br></br>9 Iron Coins craft one Gold Coin. <br></br>Can be configured to drop from mobs.",
+        "recipe": [
+            "", "x", "",
+            "x", "x", "x",
+            "", "x", ""
+        ],
+        "items": ["raw_iron"]
+    },
+    "coin_gold": {
+        "name": "Gold Coin",
+        "description": "A slightly better coin (Tier 2 Coin).<br></br>9 Gold Coins craft one Emerald Coin and 1 Gold Coin can be crafted into 9 Iron Coins.<br></br>Can be configured to drop from mobs.",
+        "recipe": [
+            "x", "x", "x",
+            "x", "x", "x",
             "x", "x", "x"
         ],
-        "items": ["oak_plank"]
+        "items": ["coin_iron"]
+    },
+    "coin_emerald": {
+        "name": "Emerald Coin",
+        "description": "A quality coin (Tier 3 Coin).<br></br>9 Emerald Coins craft one Netherite Coin and 1 Emerald Coin can be crafted into 9 Gold Coins.<br></br>Can be configured to drop from mobs.",
+        "recipe": [
+            "x", "x", "x",
+            "x", "x", "x",
+            "x", "x", "x"
+        ],
+        "items": ["coin_gold"]
+    },
+    "coin_netherite": {
+        "name": "Netherite Coin",
+        "description": "The highest quality coin (Tier 4 Coin).<br></br>1 Netherite Coin can be crafted into 9 Emerald Coins.<br></br>Can be configured to drop from mobs.",
+        "recipe": [
+            "x", "x", "x",
+            "x", "x", "x",
+            "x", "x", "x"
+        ],
+        "items": ["coin_emerald"]
     }
 }

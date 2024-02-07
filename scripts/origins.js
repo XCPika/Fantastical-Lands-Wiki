@@ -6,8 +6,8 @@ async function initializeOrigins(url) {
         data.json().then(
             origin_data => {
                 var current_origin = self.location.search.substring(1);
-                var current_origin_data = origin_data[current_origin]
                 if (current_origin != "") {
+                    var current_origin_data = origin_data[current_origin]
                     const current_origin_element = document.querySelector("#current_origin");
                     current_origin_element.querySelector(".origin-banner-title").innerHTML = current_origin_data.name;
                     current_origin_element.querySelector(".origin-banner-icon").style.backgroundImage = `url(./assets/img/icons/${current_origin}.webp)`;
