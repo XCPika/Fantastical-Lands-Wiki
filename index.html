@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="A Minecraft mod that adds new content and custom Origins">
         <title>Fantastical Lands Wiki</title>
         <script src="./scripts/index.js"></script>
         <link defer rel="stylesheet" href="./assets/css/reset.min.css">
@@ -44,8 +45,7 @@
     </body>
     <script>
         getHTMLfromURL('/template/header.html', '#header', "/Fantastical-Lands-Wiki");
-        getHTMLfromURL('/template/footer.html', '#footer', "/Fantastical-Lands-Wiki").then(
-            function(value) { initializePage() }
-        );
+        getHTMLfromURL('/template/footer.html', '#footer', "/Fantastical-Lands-Wiki")
+        .then(initializePage);
     </script>
 </html>
