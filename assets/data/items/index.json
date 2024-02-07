@@ -1,0 +1,32 @@
+{
+    "origin_orb": {
+        "name": "Orb of Origin",
+        "description": "Can be used to allow a player to change their race and class. Will be consumed on use.",
+        "recipe": [
+            "x", "X", "x",
+            "X", "O", "X",
+            "x", "X", "x"
+        ],
+        "items": ["diamond", "netherite", "end_crystal"]
+    },
+    "XP Forge": {
+        "name": "XP Forge",
+        "description": "Similar to a furnace but it instead burns coins into XP! \nThe amount of coins can be changed in config but generally lower tiers might require more than one coin per orb whereas higher tiers may make multiple orbs per coin",
+        "recipe": [
+            "x", "X", "x",
+            "x", "O", "x",
+            "x", "x", "x"
+        ],
+        "items": ["smooth_stone", "xp_bottle", "furnace"]
+    },
+    "oak_stair": {
+        "name": "oak_stair",
+        "description": "Similar to a furnace but it instead burns coins into XP! \nThe amount of coins can be changed in config but generally lower tiers might require more than one coin per orb whereas higher tiers may make multiple orbs per coin",
+        "recipe": [
+            "x", "", "",
+            "x", "x", "",
+            "x", "x", "x"
+        ],
+        "items": ["oak_plank"]
+    }
+}

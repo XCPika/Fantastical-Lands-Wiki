@@ -16,6 +16,8 @@
     <body>
         <div id="header"></div> 
         <main>
+            <section id="item-view" class="stone-border"></section>
+            <section id="item-details" class="stone-border"></section>
             <section id="item-crafting-view" class="stone-border">
                 <img class="item pixelated" id="0" src="./assets/img/icons/alchemist.webp">
                 <img class="item pixelated" id="1" src="./assets/img/icons/alchemist.webp">
@@ -27,14 +29,18 @@
                 <img class="item pixelated" id="7" src="./assets/img/icons/alchemist.webp">
                 <img class="item pixelated" id="8" src="./assets/img/icons/alchemist.webp">
             </section>
-            <section id="item-details" class="stone-border"></section>
         </main>
         <div id="footer"></div> 
     </body>
-    <script>
+    <script type="module">
+        import initializeItems from "./scripts/items.js"
         getHTMLfromURL('/template/header.html', '#header', "/Fantastical-Lands-Wiki");
-        getHTMLfromURL('/template/footer.html', '#footer', "/Fantastical-Lands-Wiki").then(
-            function(value) { initializePage() }
-        );
+        getHTMLfromURL('/template/footer.html', '#footer', "/Fantastical-Lands-Wiki")
+            .then( 
+                async function() {
+                    await initializePage()
+                        .then(initializeItems('./assets/data/items/index.json'))
+                }
+            )
     </script>
 </html>

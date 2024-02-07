@@ -7,7 +7,6 @@
         <meta name="description" content="Details about the different races in Fantastical Lands.">
         <title>Fantastical Lands Wiki</title>
         <script src="./scripts/index.js"></script>
-        <script src="./scripts/origins.js"></script>
         <link defer rel="stylesheet" href="./assets/css/reset.min.css">
         <link rel="stylesheet" href="./assets/css/root.css">
         <link rel="stylesheet" href="./assets/css/stylesheet.css">
@@ -15,7 +14,7 @@
         <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <div id="header"></div> 
+        <div id="header"></div>
         <main>
             <section id="origin-view" class="stone-border"></section>
             <section id="origin-details" class="stone-border">
@@ -28,7 +27,8 @@
         </main>
         <div id="footer"></div> 
     </body>
-    <script>
+    <script type="module">
+        import initializeOrigins from './scripts/origins.js'
         getHTMLfromURL('/template/header.html', '#header', "/Fantastical-Lands-Wiki");
         getHTMLfromURL('/template/footer.html', '#footer', "/Fantastical-Lands-Wiki")
             .then( 

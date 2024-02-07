@@ -1,17 +1,4 @@
-function createElementWithClass(tag, cls) {
-    if (typeof(cls) == "string") {
-        cls = [cls]
-    }
-    var elem = document.createElement(tag);
-    elem.classList.add(...cls);
-    return elem
-}
-
-function createElementWithInnerHTML(tag, inner) {
-    var elem = document.createElement(tag);
-    elem.innerHTML = inner;
-    return elem
-}
+import { createElementWithClass, createElementWithInnerHTML } from './utils.js'
 
 async function initializeOrigins(url) {
     await fetch(url)
@@ -105,3 +92,6 @@ async function initializeOrigins(url) {
 function searchOrigin(event) { 
     self.location = `${self.location.protocol}//${self.location.host}${self.location.pathname}?${event.currentTarget.id}` 
 };
+
+
+export default initializeOrigins

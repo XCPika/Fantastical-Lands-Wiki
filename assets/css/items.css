@@ -1,11 +1,16 @@
 main {
-    grid-template-columns: 0.25fr 0.75fr;
     grid-template-rows: auto;
+}
+#item-view {
+    grid-area: 1 / 1;
+    grid-row-end: 4;
+    margin-right: 30%;
 }
 
 #item-crafting-view {
-    margin: auto 5svw;
-    grid-area: 2 / 1;
+    margin: auto 4svw;
+    margin-right: 0;
+    grid-area: 2 / 3;
     grid-row-end: 2;
     aspect-ratio: 1;
     background-color: #c6c6c6;
@@ -13,6 +18,7 @@ main {
     aspect-ratio: 1;
     gap: 5.6%;
     padding: 3%;
+    min-height: 200px;
     grid-template-columns: repeat(3, minmax(50px, 0.312fr));
     grid-template-rows: repeat(3, minmax(50px, 0.312fr));
 }   
