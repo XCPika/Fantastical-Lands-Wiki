@@ -25,6 +25,10 @@
     image-rendering: -webkit-optimize-contrast;
     image-rendering: pixelated;
 }
+.stone-border .small {
+    border-image: var(--stone-border) 10 round;
+}
+
 .pixelated {
     -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
     image-rendering: -webkit-optimize-contrast;

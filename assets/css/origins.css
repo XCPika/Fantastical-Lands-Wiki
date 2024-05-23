@@ -104,6 +104,11 @@ h2 {
 
 #origin-details .origin-banner-title { font-size: 1.7svw; }
 
+main {
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-rows: 0.15fr 0.7fr 0.15fr;
+}
+
 @media screen and (max-width: 50em) {
     main {
         grid-template-columns: 0.15fr 0.85fr;
@@ -131,7 +136,9 @@ h2 {
     }
 }
 
+
 @media screen and (max-width: 31.25em) {
+
     main {
         grid-template-columns: 1fr;
         grid-template-rows: 0.15fr 0.85fr;

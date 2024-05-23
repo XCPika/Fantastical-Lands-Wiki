@@ -14,7 +14,7 @@ main {
 .roadmap-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-columns: repeat(3, 0.3fr);
     justify-content: space-evenly;
     font-size: 1svw;
     text-align:center;
